@@ -1,74 +1,13 @@
-let selectGrado = document.getElementById("selectGrado");
-let selectMateria = document.getElementById("selectMateria");
-let cardsCiencias = document.querySelectorAll(".card-ciencias");
-let cardsTI = document.querySelectorAll(".card-ti");
-let cardsSexto = document.querySelectorAll(".card-sexto");
-let cardsDecimo = document.querySelectorAll(".card-decimo");
-let cardsUndecimo = document.querySelectorAll(".card-undecimo");
+const btnValidarUsuario = document.getElementById("btnValidarUsuario");
+let login = document.getElementById("login");
+let password = document.getElementById("password");
 
-selectMateria.addEventListener("change", () => {
-    let selectedOption = selectMateria.options[selectMateria.selectedIndex].text;
-    if (selectedOption == "Tecnología e Informática") {
-        cardsCiencias.forEach(element => {
-            element.classList.add("card-hidden");
-            element.classList.remove("cards");
-        }); 
-        cardsTI.forEach (element => {
-            element.classList.remove("card-hidden");
-            element.classList.add("cards");
-        });
+btnValidarUsuario.addEventListener("click", () => {
+    if ((login.value == "1234")  && (password.value == "1234")) 
+    {
+        location.href = "main-page.html";
     }
-    else if (selectedOption == "Ciencias Naturales") {
-        cardsTI.forEach(element => {
-            element.classList.add("card-hidden");
-            element.classList.remove("cards");
-        });
-        cardsCiencias.forEach (element => {
-            element.classList.remove("card-hidden");
-            element.classList.add("cards");
-        });
-    }
-    else if (selectedOption == "Ver Todos") {
-        cardsTI.forEach(element => {
-            element.classList.remove("card-hidden");
-            element.classList.add("cards");
-        });
-        cardsCiencias.forEach (element => {
-            element.classList.remove("card-hidden");
-            element.classList.add("cards");
-        });
-    }
-});
-selectGrado.addEventListener("change", () => {
-    let selectedOption = selectGrado.options[selectGrado.selectedIndex].text;
-    if (selectedOption == "card-sexto") {
-        cardsDecimo.forEach(element => {
-            element.classList.add("card-hidden");
-            element.classList.remove("cards");
-        }); 
-        cardsSexto.forEach (element => {
-            element.classList.remove("card-hidden");
-            element.classList.add("cards");
-        });
-    }
-    else if (selectedOption == "card-decimo") {
-        cardsDecimo.forEach(element => {
-            element.classList.add("card-hidden");
-            element.classList.remove("cards");
-        });
-        cardsSexto.forEach (element => {
-            element.classList.remove("card-hidden");
-            element.classList.add("cards");
-        });
-    }
-    else if (selectedOption == "Ver Todos") {
-        cardsSexto.forEach(element => {
-            element.classList.remove("card-hidden");
-            element.classList.add("cards");
-        });
-        cardsDecimo.forEach (element => {
-            element.classList.remove("card-hidden");
-            element.classList.add("cards");
-        });
+    else {
+        alert("Usuario y/o contraseña incorrectos. Intentelo de nuevo.");
     }
 });

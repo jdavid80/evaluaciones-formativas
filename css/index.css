@@ -65,6 +65,9 @@ h1 {
     border: 1px solid rgb(96,96,96,.8);
     cursor: pointer;
 }
+.card-title {
+  margin-top: 10px;
+}
 .card-hidden {
   display: none;
 }
@@ -110,15 +113,21 @@ h1 {
     align-items: flex-end;
 }
 .box-tipo-actividad {
-  /* height: 270px; */
+  height: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img-tipo-actividad {
   width: 100%;
 }
+.img-medium {
+  width: 80%;
+}
 .img-card {
     /* width: 150px; */
     height: 40px;
-    margin-bottom: 10px;
+   /*  margin-bottom: 10px; */
 }
 a {
   text-decoration: none;
@@ -163,23 +172,34 @@ a {
 .boton-accion {
   height: 50px;
   width: 90%;
-  margin: 0 auto;
+  margin: 15px auto;
   border-radius: 15px;
-  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgb(24,24,24,.9);
   font-weight: 600;
-  background-color:rgb(255,193,7);
+  /* background-color:rgb(255,193,7); */
+  /* background-color: rgb(97, 147, 16);
+  background-color:rgb(241, 235, 38); */
+  /* background-color: rgb(129,186,2); */
+  background-color: rgb(106, 148, 17);
   transition: all .4s;
+  color: white;
 }
 .boton-accion:hover {
-  background-color:rgb(241, 235, 38);
-/*   color: white; */
+  background-color: rgb(87, 124, 6);
+  /* background-color:rgb(241, 235, 38); */
+  /* color: white; */
 }
-.fa-solid {
+/* .fa-solid {
   margin-right: 7px;
+} */
+.icon-ingresar {
+  font-weight: 900;
+  font-size: 1.2em;
+  margin-right: 4px;
+  color: white;
 }
 @media only screen and (max-width: 1168px) {
   h1 {
@@ -296,41 +316,41 @@ a {
 /* Fuentes */
 /* poppins-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-800 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
