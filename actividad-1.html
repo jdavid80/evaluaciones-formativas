@@ -10,8 +10,8 @@
 </head>
 <body>
     <div class="page">
-        <h1>Actividad N. 1<br>Instalación de Visual Studio Code y Git en el PC</h1>
-        <nav aria-label="Page navigation example">
+        <h1 class="main-title">Actividad N. 1<br>Instalación de Visual Studio Code y Git en el PC</h1>
+        <!-- <nav aria-label="Page navigation example">
             <ul class="pagination">
               <li class="page-item"><a class="page-link" href="#">Previous</a></li>
               <li class="page-item"><a class="page-link" href="#">1. Instructivo</a></li>
@@ -19,8 +19,8 @@
               <li class="page-item"><a class="page-link" href="#">3</a></li>
               <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
-          </nav>
-          <ul class="nav nav-tabs">
+          </nav> -->
+          <!-- <ul class="nav nav-tabs">
             <li class="nav-item style-tab">
               <a id="item1" class="nav-link active" aria-current="page" href="#">1. Instructivo</a>
             </li>
@@ -33,18 +33,16 @@
             <li class="nav-item style-tab">
               <a class="nav-link">Disabled</a>
             </li>
-          </ul>
-          <div class="container my-5">
+          </ul> -->
+          <!-- <div class="container my-5">
               <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                    
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">1. Requerimientos</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">2. Instructivo</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">3. Instrumentos de Evaluación</button>
                   </div>
-              </nav>
-              <div class="tab-content" id="nav-tabContent">
+              </nav> -->
+              <!-- <div class="tab-content" id="nav-tabContent">
 
               </div>
           </div>
@@ -60,29 +58,41 @@
             los fabricantes.
         </p>
         <h3>Paso 2</h3>
-        <p>En la barra de busquedas del navegador web ingresamos el término "git"</p>
+        <p>En la barra de busquedas del navegador web ingresamos el término "git"</p> -->
         
         <!-- ****** -->
-        <h3>Configuración</h3>
+<!--         <h3>Configuración</h3>
         <p>Configuración de GIT</p>
         <img src="img/Imagen2-git-430x295.png" alt="">
         <p></p>
         <p>Inicializar repositorio</p>
-        <img src="img/Imagen1-git-460x98.png" alt="">
-    </div>
-    <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-          <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
+        <img  --><!-- src="img/Imagen1-git-460x98.png" alt="">
+    </div> -->
+      <!-- <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
         <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+      </div> -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">1. Instructivo</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">2. Instrumento de Evaluación</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">3. Lista de Chequeo</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <embed src="pdf/Instructivo AA1_Git_Github.pdf" type="application/pdf" width="100%" height="600px"/>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <embed src="pdf/Instrumento AA1_Git_Github.pdf" type="application/pdf" width="100%" height="600px"/>
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
       </div>
     <script src="js/actividad-1.js"></script>
     <script src="js/bootstrap.js"></script>
