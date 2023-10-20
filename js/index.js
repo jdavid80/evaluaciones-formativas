@@ -3,7 +3,7 @@ let login = document.getElementById("login");
 let password = document.getElementById("password");
 
 btnValidarUsuario.addEventListener("click", () => {
-    if ((login.value == "1234")  && (password.value == "1234")) 
+    if ((login.value == "admin")  && (password.value == "tesis")) 
     {
         location.href = "main-page.html";
     }
@@ -13,7 +13,7 @@ btnValidarUsuario.addEventListener("click", () => {
 });
 document.addEventListener("keyup", function(event) {
     if(event.key == 'Enter') {
-        if ((login.value == "1234")  && (password.value == "1234")) 
+        if ((login.value == "admin")  && (password.value == "tesis")) 
     {
         location.href = "main-page.html";
     }
