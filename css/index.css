@@ -7,7 +7,7 @@
   /* background-color: blue; */
   display: grid;
   grid-template: "empty-left        main-content empty-right" / 
-                  minmax(30px, 1fr) 1100px       minmax(30px, 1fr);
+                  minmax(30px, 1fr) 825px       minmax(30px, 1fr);
 }
 .main-content {
   grid-area: main-content;
@@ -67,6 +67,7 @@ h1 {
 }
 .card-title {
   margin-top: 10px;
+  font-weight: 600;
 }
 .card-hidden {
   display: none;
