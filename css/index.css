@@ -8,6 +8,7 @@
   display: grid;
   grid-template: "empty-left        main-content empty-right" / 
                   minmax(30px, 1fr) 825px       minmax(30px, 1fr);
+  padding-bottom: 200px;
 }
 .main-content {
   grid-area: main-content;
