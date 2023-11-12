@@ -7,7 +7,7 @@
   /* background-color: blue; */
   display: grid;
   grid-template: "empty-left        main-content empty-right" / 
-                  minmax(30px, 1fr) 825px       minmax(30px, 1fr);
+                  minmax(30px, 1fr) 900px       minmax(30px, 1fr);
   padding-bottom: 200px;
 }
 .main-content {
@@ -42,7 +42,7 @@ select:hover {
 }
 .cards-box {
   display: grid;
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: repeat(3, 250px);
   gap: 20px;
 }
 h1 {
