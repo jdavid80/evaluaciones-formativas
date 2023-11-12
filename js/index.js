@@ -3,7 +3,7 @@ let login = document.getElementById("login");
 let password = document.getElementById("password");
 
 btnValidarUsuario.addEventListener("click", () => {
-    if ((login.value == "admin")  && (password.value == "tesis")) 
+    if ((login.value == "12265812")  && (password.value == "12265812")) 
     {
         location.href = "main-page.html";
     }
