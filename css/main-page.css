@@ -2,17 +2,45 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins';
+    box-sizing: border-box;
 }
 .page-content {
-  /* background-color: blue; */
-  display: grid;
-  grid-template: "empty-left        main-content empty-right" / 
-                  minmax(30px, 1fr) 900px       minmax(30px, 1fr);
-  padding-bottom: 200px;
+    display: grid;
+    /* margin-top: 30px; */
+    grid-template: "empty-left        main-content empty-right" / 
+                    minmax(30px, 1fr) 900px       minmax(30px, 1fr);
+    padding-bottom: 200px;
+    background-color: rgb(240,240,240);
 }
 .main-content {
   grid-area: main-content;
-  /* background-color: red; */
+}
+.box-main-title {
+  background-color: #0d6efd;
+  width: 100%;
+  min-height: 80px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+.main-title {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 600;
+  color: white;
+}
+.box-usuario {
+  /* background-color: rgb(220,220,220); */
+  font-size: 1em;
+  padding: 15px 10px 15px 30px;
+  border-bottom: 2px solid rgb(220,220,220);
+}
+.usuario, .rol {
+  font-weight: 500;
+  color: rgb(48,48,48);
 }
 .filtros {
   display: grid;
@@ -44,13 +72,6 @@ select:hover {
   display: grid;
   grid-template-columns: repeat(3, 250px);
   gap: 20px;
-}
-h1 {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 1.7em;
-    font-weight: 600;
-    color: rgb(48,48,48,.9);
 }
 .cards {
     width: 250px;
@@ -191,12 +212,7 @@ a {
 }
 .boton-accion:hover {
   background-color: rgb(87, 124, 6);
-  /* background-color:rgb(241, 235, 38); */
-  /* color: white; */
 }
-/* .fa-solid {
-  margin-right: 7px;
-} */
 .icon-ingresar {
   font-weight: 900;
   font-size: 1.2em;
@@ -204,8 +220,8 @@ a {
   color: white;
 }
 @media only screen and (max-width: 1168px) {
-  h1 {
-    margin-top: 15px;
+  .main-title {
+    font-size: 1.4em;
   }
   .page-content {
     display: grid;
@@ -243,8 +259,8 @@ a {
 
 }
 @media only screen and (max-width: 768px) {
-  h1 {
-    margin-top: 10px;
+  .main-title {
+    font-size: 1.2em;  
   }
   .page-content {
     display: grid;
@@ -264,8 +280,8 @@ a {
   }
 }
 @media only screen and (max-width: 430px) {
-  h1 {
-    margin-top: 10px;
+  .box-main-title {
+    height: 140px;
   }
   .page-content {
     display: grid;
